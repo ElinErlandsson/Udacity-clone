@@ -1,0 +1,57 @@
+:root{
+    --primary-clr:#525c65;
+    --secondary-clr:#2e3d49;
+    --white-clr:#fff;
+    --btn-clr:#017a9b;
+    --hover-clr:#016682;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Open Sans, sans-serif;
+    color: var(--primary-clr);
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-clr);
+    cursor: pointer;  
+}
+
+ul{
+    list-style: none;
+}
+
+/* Utillities */
+.btn{
+    width: 13.75rem;
+    height: 3rem;
+    padding: 0 .5rem;
+    font-size: .813rem;
+    font-weight: 600;
+    letter-spacing: .125rem;
+    border-radius: 0.25rem;
+    text-align: center;
+    color: var(--white-clr);
+    background-color: var(--btn-clr);
+    box-shadow: 8px 10px 20px 0 rgba(46,61,73,.15);
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+.btn:hover{
+ background-color: var(--hover-clr);
+}
+
+.text-center{
+    text-align: center;
+}
