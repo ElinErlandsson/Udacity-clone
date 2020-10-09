@@ -1,0 +1,87 @@
+@media screen and (max-width: 62rem){
+    label{
+        display: block;
+    }
+
+    .main-nav{
+        display: none;
+    }
+
+    .dropdown-nav{
+        display: block;
+    } 
+
+    #toggle:checked + .main-nav{
+        display: block;
+    }
+
+    .logo-link{
+        margin: 0 auto;
+        padding-left: 110px;
+    }
+
+    .udacity-logo{
+        display: none;
+    }
+
+    .hero-container{
+        grid-template-columns: 100%;
+    }
+
+    .col-title{
+        width: 524px;
+    }
+
+    .col-blue, .col-gray{
+        width: 181px;
+    }
+
+    .hero-showcase{
+        margin-top: 0;
+    }
+    
+    .comparison-chart{
+        padding: 0 40px;
+    }
+
+    .card-carousel-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        margin: 0 auto;
+        min-width: 570px;
+        max-width: 750px;
+    }
+    
+    .explore-banner-text-wrapper{
+        padding: 0 20px;
+    }
+
+    .grade-container{
+        display: block;
+        
+    }
+}
+
+
+
+@media screen and (max-width: 1180px){
+    .main-header{
+        padding-left: 15px;
+    }
+
+    .school-title{
+        text-align: center;
+    }
+
+    .card-carousel-wrapper{
+        padding: 0 10px;
+    }
+
+    .school-container{
+        padding: 0 10px;
+    }
+
+    .footer-container{
+        padding: 0 20px;
+    }
+}
