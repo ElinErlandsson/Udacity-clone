@@ -19,12 +19,13 @@
 </head>
 
 <body>
-    <div class="top-main-container">
-        <!-- -------------------- Navigation -------------------- -->
-        <header class="main-header">
-            <label for="toggle">&#9776;</label>
+    <!-- -------------------- Navigation -------------------- -->
+    <header class="main-header fixed-header">
+        <div class="header-wrapper">
+            <!-- Hamburger menu  -->
+            <label for="toggle">&#9776;</label> <!-- Hamburger icon -->
             <input type="checkbox" id="toggle">
-
+            <!-- -------------------- Top Logo -------------------- -->
             <a href="index.html" class="logo-link"><svg height="30" viewBox="0 0 180 30" width="180">
                     <g fill="none" fill-rule="evenodd">
                         <path class="udacity-logo"
@@ -36,6 +37,7 @@
                     </g>
                 </svg>
             </a>
+            <!-- -------------------- Navbar -------------------- -->
             <nav class="main-nav">
                 <ul class="dropdown-nav">
                     <li class="dropdown-items">
@@ -70,14 +72,18 @@
                     <button class="btn btn-nav">Get started</button>
                 </ul>
             </nav>
-        </header>
+    </header>
+    </div>
 
+    <div class="main-container-size">
         <!-- -------------------- Hero -------------------- -->
         <main class="hero-container">
+            <!-- Showcase image in css -->
             <div class="hero-showcase">
                 <div class="hero-text-container">
-                    <h1 class="hero-title">Bootcamp Quality at <span>1/10</span> of the Cost</h1>
-                    <p class="hero-text">Udacity is the world’s fastest, most efficient way to master the skills tech
+                    <h1 class="hero-title">Bootcamp Quality at 1/10 of the Cost</h1>
+                    <p class="hero-text">Udacity is the world’s fastest, most efficient way to master the skills
+                        tech
                         companies want. 100% online, part-time & self-paced.</p>
                     <button class="btn">Learn more</button>
                     <div class="hero-partner-container">
@@ -103,7 +109,7 @@
                     </div>
                 </div>
             </div>
-
+            <!-- -------------------- Right side hero / Table -------------------- -->
             <div class="comparison-chart">
                 <h2 class="chart-title">Only at Udacity: <strong>Job-Ready Skills</strong></h2>
                 <table class="table">
@@ -114,6 +120,7 @@
                             <th class="col col-gray">Others</th>
                         </tr>
                     </thead>
+
                     <tbody>
                         <tr class="row">
                             <td class="col col-title">
@@ -136,6 +143,7 @@
                             </td>
                             <td class="col col-gray"><strong>X</strong></td>
                         </tr>
+
                         <tr class="row">
                             <td class="col col-title">
                                 Practitioner-level skills
@@ -157,6 +165,7 @@
                             </td>
                             <td class="col col-gray"><strong>X</strong></td>
                         </tr>
+
                         <tr class="row">
                             <td class="col col-title">
                                 Job-focused content
@@ -178,6 +187,7 @@
                             </td>
                             <td class="col col-gray"><strong>X</strong></td>
                         </tr>
+
                         <tr class="row">
                             <td class="col col-title">
                                 Real human help
@@ -199,6 +209,7 @@
                             </td>
                             <td class="col col-gray"><strong>X</strong></td>
                         </tr>
+
                         <tr class="row">
                             <td class="col col-title">
                                 Personalized code reviews
@@ -220,6 +231,7 @@
                             </td>
                             <td class="col col-gray"><strong>X</strong></td>
                         </tr>
+
                         <tr class="row">
                             <td class="col col-title">
                                 Real-life projects
@@ -246,9 +258,11 @@
             </div>
         </main>
 
-        <!-- --------------------Card-Carousel-------------------- -->
+        <!-- -------------------- Card Carousel Container -------------------- -->
         <section class="card-carousel-container">
-            <h2 class="carousel-title">Explore our schools to find your perfect program</h2>
+
+            <h2 class="carousel-title text-center">Explore our schools to find your perfect program</h2>
+            <!-- -------------------- Card Options -------------------- -->
             <ul class="school-container">
                 <li class="school">
                     <button class="focus-btn school-title-mobile-minus">
@@ -281,9 +295,11 @@
                     </button>
                 </li>
             </ul>
-            <article class="card-carousel-wrapper">
+            <!-- -------------------- Card Carousel -------------------- -->
+            <div class="card-carousel-wrapper">
                 <div class="carousel-card card-carousel-one">
                     <div class="card-carousel-img-wrapper img-carousel-one flag-new"></div>
+                    <!-- Card image in css -->
                     <h5 class="card-carousel-title">Data Science for Business</h5>
                     <div class="card-carousel-footer-wrapper">
                         <p class="student-ratings">Intermediate</p>
@@ -293,6 +309,7 @@
                 </div>
                 <div class="carousel-card card-carousel-two">
                     <div class="card-carousel-img-wrapper img-carousel-two flag-new"></div>
+                    <!-- Card image in css -->
                     <h5 class="card-carousel-title">Data Product Manager</h5>
                     <div class="card-carousel-footer-wrapper">
                         <p class="student-ratings">Intermediate</p>
@@ -302,6 +319,7 @@
                 </div>
                 <div class="carousel-card card-carousel-three">
                     <div class="card-carousel-img-wrapper img-carousel-three flag-new"></div>
+                    <!-- Card image in css -->
                     <h5 class="card-carousel-title">SQL</h5>
                     <div class="card-carousel-footer-wrapper">
                         <p class="student-ratings">Beginner</p>
@@ -311,6 +329,7 @@
                 </div>
                 <div class="carousel-card card-carousel-four">
                     <div class="card-carousel-img-wrapper img-carousel-four flag-popular"></div>
+                    <!-- Card image in css -->
                     <h5 class="card-carousel-title">Data Analyst</h5>
                     <div class="card-carousel-footer-wrapper">
                         <p class="student-ratings">Intermediate</p>
@@ -318,128 +337,157 @@
                         <p class="card-carousel-footer-sub">4 months at 5-10 hrs/week</p>
                     </div>
                 </div>
-            </article>
+            </div>
         </section>
-        <!-- Cards -->
-        <section class="main-card-container">
-            <h2 class="card-top-title">Don't waste your valuable time or money</h2>
-            <p class="card-top-sub">Only Udacity has all the critical factors to deliver real results</p>
 
+        <!-- -------------------- Cards Container -------------------- -->
+        <section class="main-cards-container">
+
+            <h2 class="card-top-title text-center">Don't waste your valuable time or money</h2>
+            <p class="card-top-sub text-center">Only Udacity has all the critical factors to deliver real results
+            </p>
+
+            <!-- -------------------- Cards -------------------- -->
             <div class="card-container">
+
                 <div class="card-wrapper border-blue">
                     <div class="card-img-wrapper">
-                        <img class="card-img" src="/img/Briefcase.svg" alt="Briefcase">
+                        <img class="card-icon" src="/img/Briefcase.svg" alt="Briefcase">
                     </div>
-                    <h3 class="card-title">Get real employable skills</h3>
-                    <p class="card-sub">Our quality curriculum is designed with top-tier industry partners, not
-                        academics,
-                        so you learn the high-impact skills that top companies want.</p>
+                    <h3 class="card-title text-center">Get real employable skills</h3>
+                    <p class="card-sub text-center">Our quality curriculum is designed with top-tier industry
+                        partners,
+                        not academics, so you learn the high-impact skills that top companies want.</p>
                 </div>
-                <div class="card-wrapper border-yellow">
-                    <div class="card-img-wrapper"><img class="card-img" src="/img/light-bulb.svg" alt="Light-bulb">
-                    </div>
-                    <h3 class="card-title">Project-based, active learning</h3>
-                    <p class="card-sub">Learn by doing with real-world projects and other hands-on exercises that lead
-                        to
-                        real skills mastery</p>
-                </div>
-                <div class="card-wrapper border-green">
-                    <div class="card-img-wrapper"><img class="card-img" src="/img/clock.svg" alt="Clock">
-                    </div>
-                    <h3 class="card-title">Learn on your schedule</h3>
-                    <p class="card-sub">Self-paced learning - whenever and wherever you want. Graduate while learning
-                        part-time for 10 hrs/week.</p>
-                </div>
-                <div class="card-wrapper border-purple">
-                    <div class="card-img-wrapper"><img class="card-img" src="/img/HelpYouNeed.svg" alt="Help you need">
-                    </div>
 
-                    <h3 class="card-title">The help you need, when you need it</h3>
-                    <p class="card-sub">Reach out to our mentors 24/7 and have your coding questions answered quickly so
-                        you
-                        can keep learning.</p>
+                <div class="card-wrapper border-yellow">
+                    <div class="card-img-wrapper">
+                        <img class="card-icon" src="/img/light-bulb.svg" alt="Light-bulb">
+                    </div>
+                    <h3 class="card-title text-center">Project-based, active learning</h3>
+                    <p class="card-sub text-center">Learn by doing with real-world projects and other hands-on
+                        exercises
+                        that lead to real skills mastery</p>
+                </div>
+
+                <div class="card-wrapper border-green">
+                    <div class="card-img-wrapper">
+                        <img class="card-icon" src="/img/clock.svg" alt="Clock">
+                    </div>
+                    <h3 class="card-title text-center">Learn on your schedule</h3>
+                    <p class="card-sub text-center">Self-paced learning - whenever and wherever you want. Graduate
+                        while
+                        learning part-time for 10 hrs/week.</p>
+                </div>
+
+                <div class="card-wrapper border-purple">
+                    <div class="card-img-wrapper">
+                        <img class="card-icon" src="/img/HelpYouNeed.svg" alt="Help you need">
+                    </div>
+                    <h3 class="card-title text-center">The help you need, when you need it</h3>
+                    <p class="card-sub text-center">Reach out to our mentors 24/7 and have your coding questions
+                        answered quickly so you can keep learning.</p>
                 </div>
             </div>
         </section>
-        <!-- Explore banner -->
+
+        <!-- --------------------  Explore Banner --------------------  -->
         <section class="explore-banner-container">
-            <div class="explore-banner-text-wrapper">
+            <div class="explore-banner-text-wrapper text-center">
                 <h2 class="explore-banner-title">Make the most of your online learning experience</h2>
-                <p class="explore-banner-sub">Our Online Learning Resource Center has tips, tricks and inspiring stories
-                    to
-                    help you learn while staying home.</p>
+                <p class="explore-banner-sub">Our Online Learning Resource Center has tips, tricks and inspiring
+                    stories
+                    to help you learn while staying home.</p>
                 <button class="btn">Explore Resources</button>
             </div>
         </section>
-    </div> <!-- End of Top main container -->
+    </div> <!-- End of top main container / Background color white -->
+
+    <!-- Start of bottom main container / Background color light blue/grey -->
     <div class="bottom-main-container-color">
-        <div class="bottom-main-wrapper">
+        <div class="main-container-size">
             <h2 class="bottom-title text-center">Strength in numbers</h2>
+
+            <!-- --------------------  Grade Container --------------------  -->
             <ul class="grade-container">
                 <li class="grade-wrapper">
                     <img src="/img/degree-hat.svg" alt="" class="grade-img">
                     <h3 class="grade-title text-center">100,000+</h3>
                     <p class="grade-sub text-center">Udacity graduations and counting</p>
                 </li>
+
                 <li class="grade-wrapper">
                     <img src="/img/star_copy.svg" alt="" class="grade-img">
                     <h3 class="grade-title text-center">200+</h3>
                     <p class="grade-sub text-center">Industry experts partnering to build our content</p>
                 </li>
+
                 <li class="grade-wrapper">
                     <img src="/img/diagram.svg" alt="" class="grade-img">
                     <h3 class="grade-title text-center">100+</h3>
                     <p class="grade-sub text-center">Enterprise customers world-wide</p>
                 </li>
             </ul>
-            <article class="card-container student-card-container">
-                <div class="studen-card-wrapper card-wrapper border-green">
-                    <div class="card-img-wrapper"><img class="studen-card-img" src="/img/Jesse.webp"
-                            alt="A man man named Jesse">
+
+            <!-- -------------------- Student Cards --------------------  -->
+            <section class="card-container student-card-container">
+
+                <article class="card-wrapper studen-card-wrapper border-green">
+                    <div class="card-img-wrapper">
+                        <img class="studen-card-img" src="/img/Jesse.webp" alt="A man named Jesse">
                     </div>
                     <h3 class="studen-card-title text-center">Jesse</h3>
                     <p class="studen-card-sub text-center">"The curriculum was directly targeted toward applied
-                        techniques with high
-                        profile projects – real datasets with industry partners. It helped me achieve my career
-                        transition goal."</p>
+                        techniques with high profile projects – real datasets with industry partners. It helped me
+                        achieve my career transition goal."</p>
                     <div class="student-card-footer">
                         <p class="studen-card-footer-title text-center">now at</p>
                         <p class="studen-card-footer-sub  text-center">Raytheon | Data Scientist</p>
                     </div>
-                </div>
-                <div class="studen-card-wrapper card-wrapper border-purple">
-                    <div class="card-img-wrapper"><img class="studen-card-img" src="/img/Sundar.webp" alt="Clock">
+                </article>
+
+                <article class="studen-card-wrapper card-wrapper border-purple">
+                    <div class="card-img-wrapper">
+                        <img class="studen-card-img" src="/img/Sundar.webp" alt="A man named Sundar">
                     </div>
                     <h3 class="studen-card-title text-center">Sundar</h3>
-                    <p class="studen-card-sub text-center">"The curriculum was aligned with what I wanted to study. The
-                        assignments are
-                        specific to the industry I’m in. I was able to develop new language translation tools for my
-                        company."</p>
+                    <p class="studen-card-sub text-center">"The curriculum was aligned with what I wanted to study.
+                        The
+                        assignments are specific to the industry I’m in. I was able to develop new language
+                        translation
+                        tools for my company."</p>
                     <div class="student-card-footer">
                         <p class="studen-card-footer-title text-center">now at</p>
                         <p class="studen-card-footer-sub  text-center">Comcast | Lead Data Scientist</p>
                     </div>
-                </div>
-                <div class="studen-card-wrapper card-wrapper border-blue">
-                    <div class="card-img-wrapper"><img class="studen-card-img" src="/img/David.webp" alt="Clock">
+                </article>
+
+                <article class="studen-card-wrapper card-wrapper border-blue">
+                    <div class="card-img-wrapper">
+                        <img class="studen-card-img" src="/img/David.webp" alt="A man named David">
                     </div>
                     <h3 class="studen-card-title text-center">David</h3>
                     <p class="studen-card-sub text-center">"One of the things that attracted me to Udacity was a
-                        curriculum developed by
-                        people that worked for some of the biggest and most successful tech companies.”</p>
+                        curriculum developed by people that worked for some of the biggest and most successful tech
+                        companies.”</p>
                     <div class="student-card-footer">
                         <p class="studen-card-footer-title text-center">now at</p>
                         <p class="studen-card-footer-sub  text-center">Panera Bread | Data Administrator</p>
                     </div>
-                </div>
-            </article>
+                </article>
+            </section>
+
             <div class="btn-container">
                 <button class="btn btn-bottom">More Success Stories</button>
             </div>
+
         </div>
     </div>
-    <footer class="footer-container">
-        <div class="footer-wrapper">
+
+    <!-- -------------------- Footer --------------------  -->
+    <footer class="footer-container-color">
+        <div class="main-container-size">
+
             <section class="footer-logo">
                 <a href="index.html" class="footer-logo-link"><svg height="30" viewBox="0 0 180 30" width="180">
                         <g fill="none" fill-rule="evenodd">
@@ -450,191 +498,330 @@
                     </svg>
                 </a>
             </section>
+            <!-- -------------------- Top Footer -------------------- -->
             <section class="footer-primary">
                 <ul class="footer-list-wrapper">
+                    <!-- First column -->
                     <li class="footer-col">
                         <p class="footer-list-title">Featured Programs</p>
+
                         <ul class="footer-list">
-                            <li class="footer-items"><a href="#" class="footer-items-link">Developer for Microsoft
-                                    Azure</a></li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">RPA Developer with UiPath</a>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">Developer for Microsoft Azure</a>
                             </li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">Agile Software
-                                    Development</a></li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">Data Science for Business
-                                    Leaders</a></li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">DevOps Engineer for Microsoft
-                                    Azure</a></li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">Introduction to
-                                    Cybersecurity</a></li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">Intermediate JavaScript</a>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">RPA Developer with UiPath</a>
                             </li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">Monetization Strategy</a>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">Agile Software Development</a>
                             </li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">Growth Product Manager</a>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">Data Science for Business Leaders</a>
                             </li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">Java Web Developer</a></li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">Data Product Manager</a></li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">SQL</a></li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">AI for Healthcare</a></li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">AWS Cloud Architect</a></li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">Intel® Edge AI for IoT
-                                    Developers</a></li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">Product Manager</a></li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">AI for Business Leaders</a>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">DevOps Engineer for Microsoft Azure</a>
                             </li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">Data Intro to Machine
-                                    Learning with TensorFlow</a></li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">Data Streaming</a></li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">UX Designer</a></li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">AI Product Manager</a></li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">Sensor Fusion Engineer</a>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">Introduction to Cybersecurity</a>
                             </li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">Data Visualization</a></li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">Cloud Developer</a></li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">Cloud Dev Ops Engineer</a>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">Intermediate JavaScript</a>
                             </li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">Cloud Dev Ops Engineer</a>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">Monetization Strategy</a>
                             </li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">C++</a></li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">Data Structures and
-                                    Algorithms</a></li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">Marketing Analytics</a></li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">Data Engineer</a></li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">Android Basics</a></li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">Android Developer</a></li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">iOS Developer</a></li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">Business Analytics</a></li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">Data Analyst</a></li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">Front End Web Developer</a>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">Growth Product Manager</a>
                             </li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">Full Stack Web Developer</a>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">Java Web Developer</a>
                             </li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">Intro to Programming</a></li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">Intro to Machine Learning</a>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">Data Product Manager</a>
                             </li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">Machine Learning Engineer</a>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">SQL</a>
                             </li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">Predictive Analytics for
-                                    Business</a></li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">Programming for Data Science
-                                    with Python</a></li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">Programming for Data Science
-                                    with R</a></li>
-                            <li class="footer-items"><a href="#" class="footer-items-link">React</a></li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">AI for Healthcare</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">AWS Cloud Architect</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">Intel® Edge AI for IoT Developers</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">Product Manager</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">AI for Business Leaders</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">Data Intro to Machine Learning with
+                                    TensorFlow</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">Data Streaming</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">UX Designer</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">AI Product Manager</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">Sensor Fusion Engineer</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">Data Visualization</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">Cloud Developer</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">Cloud Dev Ops Engineer</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">Cloud Dev Ops Engineer</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">C++</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">Data Structures and Algorithms</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">Marketing Analytics</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">Data Engineer</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">Android Basics</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">Android Developer</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">iOS Developer</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">Business Analytics</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">Data Analyst</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">Front End Web Developer</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">Full Stack Web Developer</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">Intro to Programming</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">Intro to Machine Learning</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">Machine Learning Engineer</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">Predictive Analytics for Business</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">Programming for Data Science with Python</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">Programming for Data Science with R</a>
+                            </li>
+                            <li class="footer-items">
+                                <a href="#" class="footer-items-link">React</a>
+                            </li>
                         </ul>
                     </li>
 
+                    <!-- Second column -->
                     <li class="footer-col">
                         <div class="footer-col-wrapper">
                             <p class="footer-list-title">Only At Udacity</p>
+
                             <ul class="footer-list">
-                                <li class="footer-items"><a href="#" class="footer-items-link">Artificial
-                                        Intelligence</a></li>
-                                <li class="footer-items"><a href="#" class="footer-items-link">Deep Learning</a></li>
-                                <li class="footer-items"><a href="#" class="footer-items-link">Digital Marketing</a>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">Artificial Intelligence</a>
                                 </li>
-                                <li class="footer-items"><a href="#" class="footer-items-link">Flying Car and Autonomous
-                                        Flight Engineer</a></li>
-                                <li class="footer-items"><a href="#" class="footer-items-link">Intro to Self-Driving
-                                        Cars</a></li>
-                                <li class="footer-items"><a href="#" class="footer-items-link">Machine Learning
-                                        Engineer</a></li>
-                                <li class="footer-items"><a href="#" class="footer-items-link">Robotics Software
-                                        Engineer</a></li>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">Deep Learning</a>
+                                </li>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">Digital Marketing</a>
+                                </li>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">Flying Car and Autonomous Flight
+                                        Engineer</a>
+                                </li>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">Intro to Self-Driving Cars</a>
+                                </li>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">Machine Learning Engineer</a>
+                                </li>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">Robotics Software Engineer</a>
+                                </li>
                             </ul>
                         </div>
+                        <!-- Second column part two-->
                         <div class="footer-col-wrapper">
                             <p class="footer-list-title">Udacity Schools</p>
+
                             <ul class="footer-list">
-                                <li class="footer-items"><a href="#" class="footer-items-link">Self-Driving Car
-                                        Engineer</a></li>
-                                <li class="footer-items"><a href="#" class="footer-items-link">School of Artificial
-                                        Intelligence</a></li>
-                                <li class="footer-items"><a href="#" class="footer-items-link">School of Autonomous
-                                        Systems</a></li>
-                                <li class="footer-items"><a href="#" class="footer-items-link">School of Business</a>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">Self-Driving Car Engineer</a>
                                 </li>
-                                <li class="footer-items"><a href="#" class="footer-items-link">School of Data
-                                        Science</a></li>
-                                <li class="footer-items"><a href="#" class="footer-items-link">School of Programming</a>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">School of Artificial Intelligence</a>
                                 </li>
-                                <li class="footer-items"><a href="#" class="footer-items-link">School of Cloud
-                                        Computing</a></li>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">School of Autonomous Systems</a>
+                                </li>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">School of Business</a>
+                                </li>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">School of Data Science</a>
+                                </li>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">School of Programming</a>
+                                </li>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">School of Cloud Computing</a>
+                                </li>
                             </ul>
                         </div>
                     </li>
 
+                    <!-- Third column -->
                     <li class="footer-col">
                         <div class="footer-col-wrapper">
                             <p class="footer-list-title">Resources</p>
+
                             <ul class="footer-list">
-                                <li class="footer-items"><a href="#" class="footer-items-link">Catalog</a></li>
-                                <li class="footer-items"><a href="#" class="footer-items-link">Career Resource
-                                        Center</a></li>
-                                <li class="footer-items"><a href="#" class="footer-items-link">Career Services</a></li>
-                                <li class="footer-items"><a href="#" class="footer-items-link">Student Success</a></li>
-                                <li class="footer-items"><a href="#" class="footer-items-link">Udacity Talks</a></li>
-                                <li class="footer-items"><a href="#" class="footer-items-link">Scholarships</a></li>
-                                <li class="footer-items"><a href="#" class="footer-items-link">What is AI?</a></li>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">Catalog</a>
+                                </li>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">Career Resource Center</a>
+                                </li>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">Career Services</a>
+                                </li>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">Student Success</a>
+                                </li>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">Udacity Talks</a>
+                                </li>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">Scholarships</a>
+                                </li>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">What is AI?</a>
+                                </li>
                             </ul>
                         </div>
+                        <!-- Third column part two -->
                         <div class="footer-col-wrapper">
                             <p class="footer-list-title">Programs</p>
+
                             <ul class="footer-list">
-                                <li class="footer-items"><a href="#" class="footer-items-link">Veterans</a></li>
-                                <li class="footer-items"><a href="#" class="footer-items-link">VGeorgia Tech</a></li>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">Veterans</a>
+                                </li>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">VGeorgia Tech</a>
+                                </li>
                             </ul>
                         </div>
                     </li>
 
+                    <!-- Fourth column -->
                     <li class="footer-col">
                         <div class="footer-col-wrapper">
                             <p class="footer-list-title">Company</p>
+
                             <ul class="footer-list">
-                                <li class="footer-items"><a href="#" class="footer-items-link">About</a></li>
-                                <li class="footer-items"><a href="#" class="footer-items-link">Blog</a></li>
-                                <li class="footer-items"><a href="#" class="footer-items-link">In the News</a></li>
-                                <li class="footer-items"><a href="#" class="footer-items-link">Jobs</a></li>
-                                <li class="footer-items"><a href="#" class="footer-items-link">Udacity Intersect</a>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">About</a>
                                 </li>
-                                <li class="footer-items"><a href="#" class="footer-items-link">Become an Instructor</a>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">Blog</a>
+                                </li>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">In the News</a>
+                                </li>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">Jobs</a>
+                                </li>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">Udacity Intersect</a>
+                                </li>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">Become an Instructor</a>
                                 </li>
                             </ul>
                         </div>
+                        <!-- Fourth column part two-->
                         <div class="footer-col-wrapper">
                             <p class="footer-list-title">Enterprise</p>
+
                             <ul class="footer-list">
-                                <li class="footer-items"><a href="#" class="footer-items-link">Udacity for
-                                        Enterprise</a></li>
-                                <li class="footer-items"><a href="#" class="footer-items-link">Enterprise Resource
-                                        Center</a></li>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">Udacity for Enterprise</a>
+                                </li>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">Enterprise Resource Center</a>
+                                </li>
                             </ul>
                         </div>
                     </li>
 
+                    <!-- Fifth column -->
                     <li class="footer-col">
                         <div class="footer-col-wrapper">
                             <p class="footer-list-title">Support</p>
+
                             <ul class="footer-list">
-                                <li class="footer-items"><a href="#" class="footer-items-link">Contact Us</a></li>
-                                <li class="footer-items"><a href="#" class="footer-items-link">Help and FAQ</a></li>
-                                <li class="footer-items"><a href="#" class="footer-items-link">Service Status</a></li>
-                                <li class="footer-items"><a href="#" class="footer-items-link">Tech Requirements</a>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">Contact Us</a>
+                                </li>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">Help and FAQ</a>
+                                </li>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">Service Status</a>
+                                </li>
+                                <li class="footer-items">
+                                    <a href="#" class="footer-items-link">Tech Requirements</a>
                                 </li>
                             </ul>
                         </div>
                     </li>
-
                 </ul>
             </section>
+
+            <!-- -------------------- Bottom Footer -------------------- -->
             <section class="footer-secondary">
                 <div class="footer-secondary-top-wrapper">
                     <div class="copyright-container">
                         <p class="copyright">
-                            &copy 2011–2020 Udacity, Inc. <span class="copy-links">Legal & Privacy Site Map</span>
+                            &copy 2011–2020 Udacity, Inc.
+                            <a href="#" class="copy-links footer-items-link">Legal & Privacy</a>
+                            <a href="#" class="copy-links footer-items-link">Site Map</a>
                         </p>
                     </div>
+
                     <div class="social-media-icon-container">
                         <a href="#" class="icon-link">
                             <img src="/img/facebook.svg" alt="facebook" class="social-media-icon">
@@ -653,20 +840,20 @@
                         </a>
                     </div>
                 </div>
+
                 <div class="footer-secondary-bottom-wrapper">
                     <p class="micro-footer-text text-center">
                         "Nanodegree" is a registered trademark of Udacity. © 2011–2020 Udacity, Inc.
                     </p>
                     <p class="micro-footer-text text-center">
                         Udacity is not an accredited university and we don't confer traditional degrees. Udacity
-                        Nanodegree programs represent collaborations with our industry partners who help us develop our
+                        Nanodegree programs represent collaborations with our industry partners who help us develop
+                        our
                         content and who hire many of our program graduates.
                     </p>
                 </div>
-
             </section>
-        </div>
-
+        </div> <!-- End of footer size -->
     </footer>
 </body>
 

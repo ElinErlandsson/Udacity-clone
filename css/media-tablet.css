@@ -1,5 +1,13 @@
+/* ========== Tablet Size ========== */
+
 @media screen and (max-width: 62rem){
+
+    /* ========== Hamburger menu ========== */
     label{
+        display: block;
+    }
+
+    #toggle:checked + .main-nav{
         display: block;
     }
 
@@ -11,51 +19,52 @@
         display: block;
     } 
 
-    #toggle:checked + .main-nav{
-        display: block;
-    }
-
     .logo-link{
         margin: 0 auto;
-        padding-left: 110px;
+        padding-left: 6.875rem;
     }
 
     .udacity-logo{
         display: none;
     }
 
+    /* ========== Hero ========== */
     .hero-container{
         grid-template-columns: 100%;
-    }
-
-    .col-title{
-        width: 524px;
-    }
-
-    .col-blue, .col-gray{
-        width: 181px;
     }
 
     .hero-showcase{
         margin-top: 0;
     }
-    
+
+    /* ========== Table ========== */
     .comparison-chart{
-        padding: 0 40px;
+        padding: 0 2.5rem;
     }
 
+    .col-title{
+        width: 32.75rem;
+    }
+
+    .col-blue, .col-gray{
+        width: 11.3125rem;
+    }
+    
+    /* ========== Card Carousel ========== */
     .card-carousel-wrapper{
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 30px;
+        grid-gap: 1.875rem;
+        min-width: 35.625rem;
+        max-width: 46.875rem;
         margin: 0 auto;
-        min-width: 570px;
-        max-width: 750px;
     }
     
+    /* ========== Explore Banner ========== */
     .explore-banner-text-wrapper{
-        padding: 0 20px;
+        padding: 0 1.25rem;
     }
 
+    /* ========== Grade Container ========== */
     .grade-container{
         display: block;
         
@@ -63,25 +72,26 @@
 }
 
 
+/* ========== Main container desktop size ========== */
 
-@media screen and (max-width: 1180px){
+@media screen and (max-width: 73.75rem){
     .main-header{
-        padding-left: 15px;
+        padding-left: 0.9375rem
+    }
+
+    .card-carousel-wrapper{
+        padding: 0 0.625rem;
+    }
+
+    .school-container{
+        padding: 0 0.625rem;
     }
 
     .school-title{
         text-align: center;
     }
 
-    .card-carousel-wrapper{
-        padding: 0 10px;
-    }
-
-    .school-container{
-        padding: 0 10px;
-    }
-
-    .footer-container{
-        padding: 0 20px;
+    .footer-container-color{
+        padding: 0 1.25rem;
     }
 }

@@ -1,9 +1,18 @@
 :root{
+    /* ===== Color ===== */
     --primary-clr:#525c65;
     --secondary-clr:#2e3d49;
     --white-clr:#fff;
+    --semi-white-clr:#f7f7f8;
     --btn-clr:#017a9b;
     --hover-clr:#016682;
+    --border-blue-clr:#02B3E4;
+
+    /* ===== Font weight ===== */
+    --light: 300;
+    --regular: 400;
+    --semi-bold: 600;
+    --bold: 700;
 }
 
 *,
@@ -15,6 +24,7 @@
 }
 
 body{
+    position: relative;
     font-family: Open Sans, sans-serif;
     color: var(--primary-clr);
 }
@@ -35,9 +45,9 @@ ul{
     height: 3rem;
     padding: 0 .5rem;
     font-size: .813rem;
-    font-weight: 600;
+    font-weight: var(--semi-bold);
     letter-spacing: .125rem;
-    border-radius: 0.25rem;
+    border-radius: .25rem;
     text-align: center;
     color: var(--white-clr);
     background-color: var(--btn-clr);
@@ -52,6 +62,7 @@ ul{
  background-color: var(--hover-clr);
 }
 
+/* ===== My Classes ===== */
 .text-center{
     text-align: center;
 }
