@@ -157,11 +157,8 @@
         }
 
         .footer-list{
-            margin-bottom: 0;
-        }
-
-        .footer-items{
             display: none;
+            margin-bottom: 0;
         }
 
         .footer-list-title{
@@ -195,7 +192,6 @@
 
         .social-media-icon-container{
             height: 3rem;
-            float: left;
             padding-top: 1rem;
             margin: 0 auto 1.5rem;
             display: inline-block;
