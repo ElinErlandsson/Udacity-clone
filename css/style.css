@@ -91,7 +91,7 @@ label{
     letter-spacing: .09375rem;
 }
 
-/* ========== Hero showcase ========== */
+/* ========== Hero Showcase ========== */
 .hero-container{
     margin-top: 6rem;
     display: grid;
@@ -574,12 +574,12 @@ table{
 
 /* ========== Footer ========== */
 .footer-container-color{
-    padding-top: 4.5rem;
     background-image: linear-gradient(to bottom right,var(--semi-white-clr),#eafbff);
 }
 
 .footer-logo{
-    margin-bottom: 3rem;
+    padding-top: 4.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .footer-list-wrapper{
@@ -616,7 +616,7 @@ table{
 
 /* ========== Footer Bottom ========== */
 .footer-secondary{
-    border-top: 1px solid #d8d8d8;
+    border-top: 1px solid #dbe2e8;
 }
 
 .footer-secondary-top-wrapper{
@@ -654,5 +654,5 @@ table{
     margin: 0 auto;
     font-size: .5625rem;
     line-height: .75rem;
-    color: var(--primary-clr);  
+    color: var(--primary-clr);    
 }
